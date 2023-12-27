@@ -1,0 +1,32 @@
+
+
+/*Css Variables*/
+:root{
+    --primary-color:#116466; /*var(--primary-color);*/
+    --border: #d1e8e2;
+    --cream: #ffcb9a;
+    --dark-cream: #d9b08c;
+    --light: #d1e8e2;
+    --dark: #2c3531;
+
+    /*Font Family*/
+    --font-mont: 'Mont',cursive;
+    --font-Rale: 'Rale',cursive;
+
+    /*Border Colors*/
+    --box-shadow: 0 0 1.2rem #090a0a7a;
+    --box-shadow2: 0 .5rem 1.5rem #0d2e2e23;
+    --box-shadow3: 0 .3rem 4rem #252c2c2f;
+}
+
+/*Font Family - Mostserrat*/
+@font-face{
+    font-family: 'Mont';
+    src: url(../../vendor/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+/*Font Family - Mostserrat*/
+@font-face{
+    font-family: 'Mont';
+    src: url(../../vendor/fonts/Raleway/static/Raleway-Regular.ttf);
+}

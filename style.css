@@ -1,0 +1,235 @@
+/*
+    Theme Name: Prosper
+    Theme URI:
+    Version: 1.0.0
+    Author: Devansh Cokerey
+    Author URI: www.linkedin.com/in/devansh-cokerey
+    Description: Prosper is the epitome of simplicity and elegance, designed with beginners in mind. This WordPress theme offers an intuitive and user-friendly interface, making website creation effortless for users with no coding expertise. Its clean and modern design ensures your content takes center stage, captivating your visitors from the moment they land on your site.
+*/
+
+/*import css files*/
+@import url(./assets/css/_variables.css);
+
+/*Global css file*/
+@import url(./assets/css/_global.css);
+
+/*Grid Css file*/
+@import url(./assets/css/_grid.css);
+
+/*include header file*/
+@import url(./assets/css/_header.css);
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: normal 900 1rem var(--font-Rale);
+    /*background: var(--dark);*/
+}
+
+/*Banner area*/
+.main-area .banner-area .banner{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+
+.main-area .banner-area .banner-title{
+    height: 100%;
+    width: 100%;
+    max-height: 450px;
+    padding-top: 15%;
+    padding-bottom: 6rem;
+    font: normal 800 1.5rem/1rem var(--font-Mont);
+}
+
+/*Categories*/
+.main-area .categories{
+    padding: 3rem 0;
+}
+
+.main-area .categories a > span{
+    border: 1px solid var(--light);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    background: var(--light);
+    box-shadow: var(--box-shadow2);
+    color: var(--dark-cream);
+    transition: all .5s ease;
+}
+
+.main-area .categories a:hover > span,
+.main-area .categories a.focus > span{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light);
+    box-shadow: none;
+}
+
+/*Post area section*/
+
+.main-area .post-area{
+    margin: 0 10%;
+}
+
+.main-area .post-area .grid{
+    column-count: 2;
+}
+
+.main-area .post-area .article{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    width: auto;
+    display: inline-block;
+}
+
+.main-area article.blog-post{
+    box-shadow: var(--box-shadow3);
+    border: 1px solid var(--solid);
+    transition: box-shadow .7s ease;
+}
+
+.main-area article.blog-post:hover{
+    box-shadow: none;
+}
+
+.main-area article.blog-post .post-info{
+    padding: 2rem;
+}
+
+.main-area article.blog-post .post-info .post-title{
+    padding: 1rem 0;
+}
+
+.main-area article.blog-post .post-info hr{
+    margin-top: 3rem;
+    background: var(--dark-cream);
+}
+
+/*sidebar area*/
+aside.sidebar .latest-post .new-post{
+    border-bottom: 1px solid var(--border);
+    padding: 5% 0;
+    max-height: 9rem;
+}
+
+aside.sidebar .latest-post .new-post .post-image,
+aside.sidebar .latest-post .new-post .post-title{
+    padding: 0 .6rem;
+}
+
+aside.sidebar .latest-post .new-post .post-title{
+    padding: .2rem;
+}
+
+aside.sidebar .latest-post .new-post .post-image img{
+    border-radius: 5rem;
+}
+
+aside.sidebar .search-area{
+    padding: 8rem 0;
+}
+
+aside.sidebar .search-area .form-group{
+    width: 237px;
+    box-shadow: var(--box-shadow2);
+}
+
+/*Popular tags*/
+aside.sidebar .popular-tags{
+    padding: 4rem 0;
+}
+
+aside.sidebar .popular-tags .tags a,
+footer.footer-area .popular-tags .tags a{
+    margin: 2.3rem 0.2rem;
+}
+
+aside.sidebar .popular-tags .tags a span,
+footer.footer-area .popular-tags .tags a span{
+    padding: 1rem 2rem;
+    background: var(--light);
+    border-radius: 50px;
+    margin-right: 1rem;
+    color: var(--dark);
+    transition: background .7s ease;
+}
+
+aside.sidebar .popular-tags .tags a:hover span,
+footer.footer-area .popular-tags .tags a:hover span{
+    background: var(--primary-color);
+    border: 1px solid var(--border);
+}
+
+/*Pagination area*/
+.main-area .pagination{
+    background: var(--light);
+    margin: 2rem 0;
+    display: inline-block;
+    padding: 1rem .7rem;
+    border-radius: 50px;
+}
+
+.main-area .pagination a span{
+    padding: .6rem 1rem;
+    border-radius: 450px;
+    color: var(--dark-cream);
+}
+
+.main-area .pagination a:hover span{
+    background: var(--primary-color);
+    color: var(--light);
+}
+
+/*footer area*/
+footer.footer-area{
+    background: var(--dark);
+    padding: 1% 10%;
+}
+
+footer.footer-area > .row{
+    padding: 5% 0;
+}
+
+footer.footer-area p.para,
+footer.footer-area .social-media,
+footer.footer-area .recent-post,
+footer.footer-area .popular-tags{
+    padding-left: 1.5rem;
+    padding-top: .9rem;
+}
+
+footer.footer-area .about-me .social-media a:hover span{
+    background: var(--light);
+    border: 1px solid var(--border);
+}
+
+footer.footer-area .social-media{
+    padding-right: 1rem;
+}
+
+footer.footer-area .recent-post .column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0;
+}
+
+footer.footer-area .recent-post .posts{
+    padding-top: .9rem;
+}
+
+footer.footer-area .popular-tags .tags a span{
+    padding: .8rem 1rem;
+}
+
+footer.footer-area .popular-tags .tags a{
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
